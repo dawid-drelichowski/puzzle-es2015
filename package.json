@@ -1,0 +1,47 @@
+{
+  "name": "puzzle-es2015",
+  "title": "Puzzle ES2015",
+  "description": "ES2015 drag and drop puzzle",
+  "version": "0.0.1",
+  "author": {
+    "name": "Dawid Drelichowski"
+  },
+  "homepage": "https://github.com/dawid-drelichowski/puzzle-es2015",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawid-drelichowski/puzzle-es2015/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawid-drelichowski/puzzle-es2015.git"
+  },
+  "devDependencies": {
+    "babel-loader": "5.3.*",
+    "bootstrap": "3.3.*",
+    "css-loader": "0.15.*",
+    "del": "^1.2.1",
+    "eslint": "0.24.*",
+    "extract-text-webpack-plugin": "0.8.*",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-util": "^3.0.6",
+    "karma": "^0.13.9",
+    "karma-chai-plugins": "^0.6.0",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.18",
+    "style-loader": "0.12.*",
+    "url-loader": "0.5.*",
+    "webpack": "1.10.*",
+    "yargs": "^3.20.0"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}

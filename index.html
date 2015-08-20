@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="author" content="Dawid Drelichowski" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title></title>
+  </head>
+  <body class="container">
+    <header class="page-header">
+      <h1>Puzzle</h1>
+    </header>
+    <main class="row">
+      <div class="col-lg-5 label label-success">
+        <ul class="grid label-success">
+          <li data-valid="1"></li>
+          <li data-valid="2"></li>
+          <li data-valid="3"></li>
+          <li data-valid="4"></li>
+          <li data-valid="5"></li>
+          <li data-valid="6"></li>
+          <li data-valid="7"></li>
+          <li data-valid="8"></li>
+          <li data-valid="9"></li>
+        </ul>
+      </div>
+      <div class="status col-lg-2">
+        <div data-in-progress class="alert label-warning text-white">Left: <span data-count class="badge">9</span></div>
+        <div data-done class="hidden alert label-success text-white">✔ Done!</div>
+      </div>
+      <div class="col-lg-5 label label-danger">
+        <ul class="grid label-danger">
+          <li draggable="true" data-field="6"></li>
+          <li draggable="true" data-field="2"></li>
+          <li draggable="true" data-field="9"></li>
+          <li draggable="true" data-field="5"></li>
+          <li draggable="true" data-field="1"></li>
+          <li draggable="true" data-field="4"></li>
+          <li draggable="true" data-field="3"></li>
+          <li draggable="true" data-field="8"></li>
+          <li draggable="true" data-field="7"></li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy; Dawid Drelichowski</p>
+    </footer>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>
