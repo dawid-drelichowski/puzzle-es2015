@@ -1,15 +1,13 @@
-import 'babel-core/polyfill';
-
 export default class {
   constructor() {
     this.callbacks = new Map();
   }
   on(event, callback, context = this) {
     if (this.callbacks.has(event)) {
-      this.callbacks.get(event).set(callback, context);
+      this.callbacks.get(event).push([callback, context]);
       return this;
     }
-    this.callbacks.set(event, new Map([[callback, context]]));
+    this.callbacks.set(event, [[callback, context]]);
     return this;
   }
   trigger(event, ...data) {

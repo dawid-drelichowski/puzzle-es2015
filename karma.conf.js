@@ -3,6 +3,7 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai'],
     files: [
       {pattern: 'src/js/*.js', included: false},
+      'node_modules/babel-core/browser-polyfill.js',
       'src/js/test/*Test.js'
     ],
     preprocessors: {

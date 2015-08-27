@@ -6,6 +6,7 @@ import {argv} from 'yargs';
 import eslint from 'gulp-eslint';
 import {Server} from 'karma';
 import webpack from 'webpack';
+import express from 'express';
 import webpackConfig from './webpack.config.js';
 
 gulp.task('lint', () => {
@@ -40,6 +41,19 @@ gulp.task('build', (done) => {
       chunkModules: false,
       colors: true
     }));
+    done();
+  });
+});
+
+gulp.task('server', (done) => {
+  const server = express();
+
+  server.use('/dist', express.static('dist'));
+  server.all(/\/(index.html)?/, (request, response) => {
+    response.sendFile(path.join(__dirname, 'index.html'));
+  });
+
+  server.listen(3000, () => {
     done();
   });
 });
