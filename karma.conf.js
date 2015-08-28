@@ -3,6 +3,7 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai'],
     files: [
       {pattern: 'src/js/*.js', included: false},
+      {pattern: 'src/js/test/fixture/*.html', included: false},
       'node_modules/babel-core/browser-polyfill.js',
       'src/js/test/*Test.js'
     ],
@@ -14,7 +15,10 @@ module.exports = function(config) {
         modulesDirectories: ['node_modules', 'src/js']
       },
       module: {
-        loaders: [{test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}]
+        loaders: [
+          {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+          {test: /\.html/, loader: 'html-loader'}
+        ]
       }
     },
     webpackMiddleware: {

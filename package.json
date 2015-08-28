@@ -2,7 +2,7 @@
   "name": "puzzle-es2015",
   "title": "Puzzle ES2015",
   "description": "ES2015 drag and drop puzzle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Dawid Drelichowski"
   },
@@ -26,6 +26,7 @@
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
     "gulp-util": "^3.0.6",
+    "html-loader": "^0.3.0",
     "karma": "^0.13.9",
     "karma-chai-plugins": "^0.6.0",
     "karma-mocha": "^0.2.0",
