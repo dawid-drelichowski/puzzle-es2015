@@ -47,13 +47,21 @@ gulp.task('build', (done) => {
 
 gulp.task('server', (done) => {
   const server = express();
+  let port = 3000;
 
+  if (Number.isInteger(argv.port)) {
+    port = argv.port;
+  }
   server.use('/dist', express.static('dist'));
   server.all(/\/(index.html)?/, (request, response) => {
     response.sendFile(path.join(__dirname, 'index.html'));
   });
 
-  server.listen(3000, () => {
+  server.listen(port, () => {
+    gulpUtil.log('[express]', `Server listening on port ${port}`);
+    done();
+  }).on('error', function(error) {
+    gulpUtil.log(gulpUtil.colors.red(`Error ${error.message}`));
     done();
   });
 });
