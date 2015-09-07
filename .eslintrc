@@ -9,6 +9,12 @@
   "rules": {
     "quotes": [2, "single"],
     "indent": [2, 2],
-    "no-undef": 1
+    "no-undef": 1,
+    "no-dupe-keys": 2,
+    "no-duplicate-case": 2,
+    "no-empty-character-class": 2,
+    "no-empty": 2,
+    "no-ex-assign": 2,
+    "no-extra-boolean-cast": 2
   }
 }
