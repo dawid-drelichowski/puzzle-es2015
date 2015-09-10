@@ -29,6 +29,6 @@ export default class {
   }
   dragAndDropSupported() { //taken from modernizr.com
     const div = document.createElement('div');
-    return ('draggable' in div) || ('ondragstart' in div && 'ondrop' in div);
+    return 'draggable' in div || 'ondragstart' in div && 'ondrop' in div;
   }
-};
+}
