@@ -65,6 +65,18 @@
     "no-with": 2,
     "radix": 2,
     "vars-on-top": 2,
-    "yoda": 2
+    "yoda": 2,
+    "strict": 2,
+    "no-label-var": 2,
+    "no-shadow-restricted-names": 2,
+    "no-undef-init": 2,
+    "no-undef": 2,
+    "no-undefined": 2,
+    "no-unused-vars": 2,
+    "no-use-before-define": 2,
+    "no-path-concat": 2,
+    "array-bracket-spacing": [2, "never"],
+    "brace-style": 2,
+    "camelcase": 2
   }
 }
