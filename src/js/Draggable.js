@@ -6,7 +6,7 @@ export default class extends EventAware {
     element.addEventListener('dragstart', (event) => {
       this.start(event);
     }, false);
-    element.addEventListener('dragleave',this.leave, false);
+    element.addEventListener('dragleave', this.leave, false);
   }
   start(event) {
     const target = event.target;

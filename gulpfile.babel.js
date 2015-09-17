@@ -10,7 +10,7 @@ import express from 'express';
 import webpackConfig from './webpack.config.js';
 
 gulp.task('lint', () => {
-  return gulp.src(['*.js','src/js/**/*.js'])
+  return gulp.src(['*.js', 'src/js/**/*.js'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError());
