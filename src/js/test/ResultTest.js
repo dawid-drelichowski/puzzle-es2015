@@ -1,5 +1,5 @@
 import Result from 'Result';
-import resultFixture from 'test/fixture/result.html'
+import resultFixture from 'test/fixture/result.html';
 
 describe('Result', function() {
   let draggableCount = 3,
