@@ -11,7 +11,7 @@ Simple drag and drop puzzle game which uses native HTML 5 drag and drop feature,
 
 Command: `npm install`.
 
-##Server
+## Server
 
 To be done...
 
